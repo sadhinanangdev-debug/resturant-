@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #fffbeb;
+            color: #451a03;
+        }
+
+        .navbar {
+            background: #1c1917;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #fed7aa;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #d6d3d1;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ea580c;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+        }
+
+        .about {
+            padding: 80px 5%;
+            background: white;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 2.2rem;
+            color: #ea580c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about p {
+            color: #57534e;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .chef-section {
+            background: #fffbeb;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .chef-section h3 {
+            color: #dc2626;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #0c0a09;
+            color: #a8a29e;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Spice Garden -Resturant</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="page-header">
+        <h1>Our Story</h1>
+    </div>
+    <section class="about">
+        <h2>Since 2010</h2>
+        <p>Spice Garden started as a small family kitchen se start kiya tha. Hamara maqsad tha logon ko ghar jaisa asli
+             khana khilana. Aaj 14 saal baad, hum sukkur ke sab se mashoor restaurants me se ek hain.</p>
+        <p>Hum sirf fresh local sabzi, asli masalay, aur pure ghee use karte hain. Koi artificial color ya preservative
+            nahi. Har dish hamare head chef khud check karte hain.</p>
+    </section>
+    <section class="chef-section">
+        <!-- <h3>👨‍🍳 Chef Rajesh Kumar</h3> -->
+        <p>20+ years experience in 5-star hotels.lahore, hyderabad, sukkur me kaam kiya.</p>
+    </section>
+    <footer>© 2026 Spice Garden. Made with ❤️ in sukkur .</footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spice Garden - resturant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #fffbeb;
+            color: #451a03;
+        }
+
+        .navbar {
+            background: #1c1917;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #fed7aa;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #d6d3d1;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ea580c;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #ea580c;
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #dc2626;
+            transform: scale(1.05);
+        }
+
+        .featured {
+            padding: 80px 5%;
+            background: white;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2.2rem;
+            color: #ea580c;
+            margin-bottom: 40px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-box {
+            padding: 30px;
+            border-radius: 12px;
+            background: #fffbeb;
+        }
+
+        .feature-box h3 {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #0c0a09;
+            color: #a8a29e;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Spice Garden -Resturant </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Spice Garden - -Resturant</h1>
+        <p>Authentic Indian Flavors, Served with Love</p>
+        <a href="menu.html" class="btn">View Menu</a>
+    </section>
+    <section class="featured">
+        <h2>Why Choose Us?</h2>
+        <div class="featured-grid">
+            <div class="feature-box">
+                <h3>🍛 Authentic Taste</h3>
+                <p>Traditional recipes from generations</p>
+            </div>
+            <div class="feature-box">
+                <h3>🥘 Fresh Ingredients</h3>
+                <p>Daily sourced local vegetables & spices</p>
+            </div>
+            <div class="feature-box">
+                <h3>🚚 Fast Delivery</h3>
+                <p>30 mins delivery in all sukkur</p>
+            </div>
+        </div>
+    </section>
+    <footer>© 2026 Spice Garden. Made with ❤️ in sukkur.</footer>
+</body>
+
+</html>
